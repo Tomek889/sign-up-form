@@ -152,6 +152,7 @@ isolation: isolate;
     border-radius: 5px;
     font-weight: 600;
     margin: 5% 18% 0 8%;
+    cursor: pointer;
 }
 
 .login {
@@ -162,6 +163,25 @@ isolation: isolate;
     color: #596d48;
     text-decoration: none;
     font-weight: 800;
+}
+
+.inputs {
+    padding: 2% 12% 6% 8%;
+}
+
+.inputs p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4c4d4e
+}
+
+.input-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-boxes input {
+
 }
 
 @media (max-width: 800px) {
