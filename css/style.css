@@ -124,6 +124,20 @@ isolation: isolate;
     color: #ffffff;
 }
 
+.right-column {
+    width: 60vw;
+}
+
+.right-column .info {
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: 10% 20% 0 8%;
+}
+
+.right-column .info p {
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 800px) {
     .container {
         display: block;
@@ -136,5 +150,13 @@ isolation: isolate;
 
     .odin-logo {
         top: 10%;
+    }
+
+    .right-column {
+        width: 100vw;
+    }
+
+    .right-column .info {
+        padding: 15% 8% 0 8%;
     }
 }
