@@ -65,10 +65,20 @@ isolation: isolate;
 }
 
 .left-column {
-    height: 100vh;
     width: 40vw;
+    height: auto;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.left-column img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
 }
 
 .odin-logo {
@@ -96,11 +106,29 @@ isolation: isolate;
     margin-top: 1.5rem;
 }
 
+.left-column .credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    bottom: 2%;
+    width: 100%;
+}
+
+.left-column .credit p {
+    font-size: 0.8rem;
+}
+
+.left-column .credit p a {
+    color: #ffffff;
+}
+
 @media (max-width: 800px) {
     .container {
         display: block;
     }
-    
+
     .left-column {
         width: 100%;
         height: auto;
@@ -108,5 +136,5 @@ isolation: isolate;
 
     .odin-logo {
         top: 10%;
-      }
+    }
 }
