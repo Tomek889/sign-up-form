@@ -172,16 +172,38 @@ isolation: isolate;
 .inputs p {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #4c4d4e
+    color: #4c4d4e;
 }
 
 .input-boxes {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 12px;
+    gap: 25px 60px;
 }
 
-.input-boxes input {
+.input-box input {
+    display: block;
+    padding: 2px 10px;
+    width: 15rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 5px;
+}
 
+.input-box input:invalid {
+    border: 1.5px solid rgb(205, 9, 9);
+}
+
+.input-box input:focus {
+    border: 1.5px solid rgb(53, 53, 244);
+    outline: none;
+    box-shadow: 0px 2px 5px rgb(171, 166, 166);
+}
+
+.input-box label {
+    font-size: 0.7rem;
+    color: #4c4d4e;
+    font-weight: 700;
 }
 
 @media (max-width: 800px) {
